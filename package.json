@@ -1,0 +1,33 @@
+{
+  "name": "@plurriel/tlsreg",
+  "version": "1.0.0",
+  "description": "TLS registration daemon",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc && node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plurriel/tlsreg.git"
+  },
+  "author": "Jerome Wang <immjs>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/plurriel/tlsreg/issues"
+  },
+  "homepage": "https://github.com/plurriel/tlsreg#readme",
+  "dependencies": {
+    "acme-client": "^5.0.0",
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.20.0"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.1",
+    "@types/node": "^20.4.5",
+    "chalk": "^5.3.0",
+    "typescript": "^5.1.6"
+  }
+}
