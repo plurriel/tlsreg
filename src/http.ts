@@ -24,7 +24,8 @@ export function StartHTTP() {
     app.listen({
       port: +(process.env.HTTP_PORT as string),
       host: '0.0.0.0',
-    }, () => {
+    }, (err) => {
+      if (err) throw err;
       console.log(fancy.up('HTTP server'));
       res();
     });
