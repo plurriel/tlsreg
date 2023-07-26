@@ -23,7 +23,7 @@ export function StartHTTP() {
   return new Promise<void>((res) => {
     app.listen({
       port: +(process.env.HTTP_PORT as string),
-      host: 'localhost',
+      host: '0.0.0.0',
     }, () => {
       console.log(fancy.up('HTTP server'));
       res();
